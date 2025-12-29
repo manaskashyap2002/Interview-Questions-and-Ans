@@ -50,9 +50,8 @@ Allows only one thread at a time to access a resource.
 ### Deadlock
 Threads waiting for each other forever.
 
-# Java 8                                                                              ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
+# Java 8
+
 ### What are the features of Java 8?
 Lambda Expressions, Stream API, Functional Interface, Default Methods, Optional Class, New Date and Time API.
 
