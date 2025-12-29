@@ -1,9 +1,7 @@
 # Interview-Questions-and-Ans
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-## Core Java                                                                           ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
+## Core Java  
 Difference between ArrayList and LinkedList
 ArrayList uses a dynamic array and provides fast random access (O(1)), but insertion and deletion are slow due to shifting elements.
 LinkedList uses a doubly linked list and allows faster insertion and deletion, but random access is slow (O(n)).
