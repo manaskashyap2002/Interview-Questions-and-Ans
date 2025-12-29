@@ -547,9 +547,84 @@ Angular                                                                         
 
 
 
+******************************************************************************************************************************
+******************************************************************************************************************************
+Project                                                                             ******************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
 
+PROJECT OVERVIEW (WITH TEAM CONTEXT)
+Q1. Explain your project in detail.
+Answer:
+The Airline Employee Benefits Management System is an enterprise-grade web application used by airline HR teams to manage employee benefits, dependents, documents, and payments.
+The project was developed over 3 years by an 8-member cross-functional team. The backend was built using Java 8, Spring Boot, Hibernate, and MySQL, following a microservices architecture.
+Security was implemented using Spring Security with JWT and OAuth2. AWS S3 was used for secure document storage, Stripe for payment processing, Angular for the frontend, and Docker with CI/CD for deployments.
 
+Q2. Why did the project take 3 years?
+Answer:
+This was a long-running enterprise product, not a one-time development.
+In the first year, our 8-member team delivered the MVP covering core onboarding and benefits.
+Over the next two years, different team members worked in parallel on payments, security, compliance, performance tuning, and production support, which required continuous development and enhancements.
 
+Q3. What was your team size and role distribution?
+Answer:
+The team consisted of 8 members:
+3 Backend Developers (Java / Spring Boot)
+2 Frontend Developers (Angular)
+2 QA Engineers
+1 DevOps Engineer
+
+Q4. What was your role in the team?
+Answer:
+I worked as a Java Backend / Full-Stack Developer within the backend team.
+I was responsible for developing REST APIs, implementing security, integrating Stripe payments and AWS S3, and collaborating with frontend, QA, and DevOps team members during releases.
+
+🏗️ MICROSERVICES & ARCHITECTURE (WITH TEAM INVOLVEMENT)
+Q5. How many microservices were there?
+Answer:
+The system was designed with 10–12 microservices, each owned by specific backend developers.
+Responsibilities were clearly divided so that each backend developer handled 2–3 microservices, improving ownership and code quality.
+
+Q6. How many APIs did your system have?
+Answer:
+Each microservice exposed around 5–12 REST APIs, so overall the system had approximately 90–120 APIs, developed and maintained collaboratively by the backend team.
+
+Q7. How did the team manage microservice communication?
+Answer:
+Backend developers implemented REST-based communication for core flows, while DevOps and backend teams collaborated on async communication for audit logs and notifications.
+
+🔐 SECURITY (TEAM RESPONSIBILITY)
+Q8. Who implemented security?
+Answer:
+Security was primarily handled by the backend team.
+I personally worked on JWT token handling, role-based access control, and Spring Security configurations, while the team reviewed and tested security flows.
+
+Q9. How did the team handle token expiry issues?
+Answer:
+After feedback from QA and production monitoring, the backend team introduced refresh tokens to avoid frequent logouts while maintaining security.
+
+💳 PAYMENTS (STRIPE – TEAM COLLABORATION)
+Q10. Who worked on payments?
+Answer:
+Stripe integration was implemented by the backend team.
+I specifically worked on payment initiation, webhook handling, refunds, and transaction logging, while QA tested multiple failure scenarios.
+
+📂 DOCUMENT MANAGEMENT (AWS S3)
+Q11. Who handled document management?
+Answer:
+The backend team implemented AWS S3 integration, while QA verified access controls and HR validation workflows.
+I worked on secure upload/download APIs and S3 lifecycle policies.
+
+🔄 WORKFLOWS & PRODUCTION SUPPORT
+Q12. How did the team handle production issues?
+Answer:
+Production issues were handled collaboratively. Backend developers investigated logs, QA reproduced issues, and DevOps managed deployments and rollbacks.
+
+📈 DEPLOYMENT & DEVOPS
+Q13. Who handled deployments?
+
+Answer:
+A dedicated DevOps engineer handled CI/CD pipelines, but backend developers, including me, supported Dockerization and environment configuration.
 
 
 
