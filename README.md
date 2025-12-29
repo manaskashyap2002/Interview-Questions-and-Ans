@@ -17,6 +17,7 @@
 
 ### Abstract Class vs Interface
 **Abstract class** → Can have constructor, instance variables, and abstract + non-abstract methods; supports single inheritance.
+
 **Interface** → No constructor, methods are abstract by default (Java 8: default/static allowed); supports multiple inheritance.
 
 ### Why String is immutable?
@@ -32,79 +33,64 @@ String is immutable; StringBuilder is mutable & faster.
 ### Checked Exception
 Checked at compile time and mandatory to handle (IOException, SQLException, FileNotFoundException).
 
-Unchecked Exception
+### Unchecked Exception
 Occurs at runtime and not mandatory to handle (NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException).
 
-finally block
+### finally block
 Always executes whether exception occurs or not (resource cleanup like file/DB close).
-*****
 
-Multithreading
+## Multithreading
 
-Thread vs Runnable
+### Thread vs Runnable
 Thread extends class; Runnable implements interface.
 
-synchronized keyword
+### synchronized keyword
 Allows only one thread at a time to access a resource.
 
-Deadlock
+### Deadlock
 Threads waiting for each other forever.
-*****
 
-
-
-
-
+# Java 8                                                                              ******************************************
 ******************************************************************************************************************************
 ******************************************************************************************************************************
-Java 8                                                                              ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-What are the features of Java 8?
+### What are the features of Java 8?
 Lambda Expressions, Stream API, Functional Interface, Default Methods, Optional Class, New Date and Time API.
 
-What is a Lambda Expression?
+### What is a Lambda Expression?
 Used to write anonymous functions and reduce boilerplate code.
 
-What is a Functional Interface?
+### What is a Functional Interface?
 An interface with only one abstract method.
 
-What is Stream API?
+### What is Stream API?
 Used to process collections in a functional programming style.
 
-What is Optional class?
+### What is Optional class?
 Used to avoid NullPointerException.
 
-What are Default Methods?
+### What are Default Methods?
 Methods with implementation inside an interface.
 
-What is Method Reference?
+### What is Method Reference?
 A shorthand way to refer to a method using ::.
 
-What is the new Date and Time API in Java 8?
+### What is the new Date and Time API in Java 8?
 An improved, immutable date-time API under java.time.
 
-What is Parallel Stream?
+### What is Parallel Stream?
 Used to process data in parallel for better performance.
 
-*****
-Difference between map() and filter()
-map() → Transforms each element and returns the same number of elements
-filter() → Selects elements based on condition and may return fewer elements
-map() → Used for data modification
-filter() → Used for data selection
-map() → Works with Function
-filter() → Works with Predicate
-*****
+### Difference between map() and filter()
+**map()** → Transforms each element and returns the same number of elements
+**filter()** → Selects elements based on condition and may return fewer elements
+**map()** → Used for data modification
+**filter()** → Used for data selection
+**map()** → Works with Function
+**filter()** → Works with Predicate
 
+# Spring Boot                                                                         
 
-
-******************************************************************************************************************************
-******************************************************************************************************************************
-Spring Boot                                                                         ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-What is @SpringBootApplication?
+### What is @SpringBootApplication?
 It is a combination of @Configuration, @EnableAutoConfiguration, and @ComponentScan.
 *****
 
