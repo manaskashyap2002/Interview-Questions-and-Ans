@@ -541,3 +541,81 @@ Angular                                                                         
 ******************************************************************************************************************************
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************************************************
+******************************************************************************************************************************
+Mercedz 2nd roundInterview Questions                                                ******************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
+
+Core Java
+Arrays – Why we use them
+Arrays are used mainly to store multiple values of the same type in one variable and to access data fast using index. If the size is already known, arrays are efficient because memory is allocated once.
+
+Why array indexing is fast
+Arrays store data in continuous memory. Java calculates the memory address directly using the index, so access time is O(1). No loop or search is required.
+
+Java Collections
+ArrayList – How it is dynamic
+ArrayList uses an internal array. When the array becomes full, Java creates a bigger array, copies the old data, and continues. This resizing does not happen every time, so performance stays good.
+Memory waste in ArrayList and how Java handles it
+During resizing, old arrays become unused. Java’s Garbage Collector removes these unused arrays, so memory is freed. If size is known, we can set initial capacity to reduce resizing.
+
+ArrayList vs LinkedList – Retrieval
+ArrayList is faster for retrieval because it supports index-based access (O(1)). LinkedList must traverse node by node, so retrieval is O(n).
+Insertion in the middle (ArrayList vs LinkedList)
+If we insert an element in the middle:
+ArrayList is slower because elements must be shifted.
+
+LinkedList is faster because it only updates references.
+So LinkedList is better for frequent insert/delete in the middle.
+
+Set
+Why we use Set
+Set is used to store unique values. It automatically avoids duplicates and is useful for checking existence.
+Set implementations
+HashSet – fast, no order
+LinkedHashSet – maintains insertion order
+TreeSet – stores data in sorted order
+
+HashMap
+Why hash collision happens
+Hash collision happens because hashCode range is limited, but objects are many. Two keys can produce the same hash value.
+
+Why hash collision should be reduced
+Collisions slow down performance. HashMap must use equals() to find the correct key. Too many collisions can degrade performance from O(1) to O(n). Proper hashCode() and equals() reduce collisions.
+
+Spring Boot + Security
+OAuth 2.0 with Spring Security – High-level steps
+Add Spring Security and OAuth dependencies
+Choose OAuth provider (example: AWS Cognito)
+Configure SecurityFilterChain to secure APIs
+Validate JWT tokens
+Apply role or scope-based access
+Test end-to-end flow
+Spring Boot acts as a Resource Server, and Cognito acts as the Authorization Server.
+
+Where to put security annotations
+Config level: SecurityFilterChain (global rules)
+Class level: When all APIs need same access
+Method level: For fine-grained control (most common)
+Project level: Enable method security once
+
+JWT does not contain all information
+JWT contains only basic identity data. Extra user details are fetched from Cognito UserInfo endpoint or our own database using userId or email.
+JWT usage and reuse
+JWT is issued for a specific purpose and can be reused until it expires. After expiry, a new token is required. JWT reuse is controlled by expiry, roles, and scopes.
+
+
