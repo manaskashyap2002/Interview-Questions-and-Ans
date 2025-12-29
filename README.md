@@ -94,178 +94,168 @@ Used to process data in parallel for better performance.
 It is a combination of @Configuration, @EnableAutoConfiguration, and @ComponentScan.
 *****
 
-What is Dependency Injection (DI)?
+### What is Dependency Injection (DI)?
 Dependency Injection is a design principle where Spring provides required objects (dependencies) to a class instead of the class creating them itself.
 This makes the code loosely coupled, easier to test, and easier to maintain
 
-How Spring does DI
+### How Spring does DI
 Using annotations like @Autowired, @Component, @Service, @Repository
-*****
 
-Difference between @Controller and @RestController
-@Controller
-Used for MVC web applications
-Returns view names (JSP, Thymeleaf, HTML)
-Needs @ResponseBody to return JSON
-🧠 Used when UI pages are involved.
+### Difference between @Controller and @RestController
+**@Controller**
+- Used for MVC web applications
+- Returns view names (JSP, Thymeleaf, HTML)
+- Needs @ResponseBody to return JSON
+- 🧠 Used when UI pages are involved.
 
-@RestController---@RestController = @Controller + @ResponseBody
-Used for RESTful web services
-Returns JSON/XML directly
-@ResponseBody is not required
-🧠 Used in microservices and APIs.
-*****
+**@RestController**
+- @RestController = @Controller + @ResponseBody
+- Used for RESTful web services
+- Returns JSON/XML directly
+- @ResponseBody is not required
+- 🧠 Used in microservices and APIs.
 
-ALL HTTP methods---
-GET → Fetch data
-POST → Create new data
-PUT → Update entire data
-PATCH → Update partial data
-DELETE → Remove data
-*****
+### ALL HTTP methods---
+- GET → Fetch data
+- POST → Create new data
+- PUT → Update entire data
+- PATCH → Update partial data
+- DELETE → Remove data
 
-What are the annotation we use in exception handling in spring boot?
-@ExceptionHandler → Handles specific exceptions in a controller
-@ControllerAdvice → Global exception handling for all controllers
-@RestControllerAdvice → Global exception handling for REST APIs
-@ResponseStatus → Defines HTTP status code for an exception
-@ResponseBody → Returns exception response as JSON/XML
+### What are the annotation we use in exception handling in spring boot?
+- @ExceptionHandler → Handles specific exceptions in a controller
+- @ControllerAdvice → Global exception handling for all controllers
+- @RestControllerAdvice → Global exception handling for REST APIs
+- @ResponseStatus → Defines HTTP status code for an exception
+- @ResponseBody → Returns exception response as JSON/XML
 
-Q.Important HTTP Response Status Codes
-200 OK
-201 Created
-400 Bad Request
-401 Unauthorized
-404 Not Found
-*****
+### Q.Important HTTP Response Status Codes
+- 200 OK
+- 201 Created
+- 400 Bad Request
+- 401 Unauthorized
+- 404 Not Found
 
-What is Use of @Transactional annotation
-Used to manage database transactions automatically
-Ensures ACID properties (commit on success, rollback on failure)
-If an exception occurs, transaction is rolled back automatically
-*****
-What is Actuator?
+### What is Use of @Transactional annotation
+- Used to manage database transactions automatically
+- Ensures ACID properties (commit on success, rollback on failure)
+- If an exception occurs, transaction is rolled back automatically
+
+### What is Actuator?
 Provides health, metrics, and monitoring endpoints.
 
-What is application.properties?
+### What is application.properties?
 Used to configure application settings.
 
-What is Spring Boot DevTools?
+### What is Spring Boot DevTools?
 Provides auto-restart and faster development.
 
-*****
-Spring boot Annotaions---
-@SpringBootApplication → Main annotation to start Spring Boot app
+## Spring boot Annotaions---
+**@SpringBootApplication** → Main annotation to start Spring Boot app
 
-@Configuration → Defines configuration class
+**@Configuration** → Defines configuration class
 
-@EnableAutoConfiguration → Enables auto-configuration
+**@EnableAutoConfiguration** → Enables auto-configuration
 
-@ComponentScan → Scans components in package
+**@ComponentScan** → Scans components in package
 
-@Component → Marks a class as Spring bean
+**@Component** → Marks a class as Spring bean
 
-@Service → Business logic layer bean
+**@Service** → Business logic layer bean
 
-@Repository → DAO layer and exception translation
+**@Repository** → DAO layer and exception translation
 
-@Autowired → Injects dependency automatically
+**@Autowired** → Injects dependency automatically
 
-@Qualifier → Resolves bean conflict
+**@Qualifier** → Resolves bean conflict
 
-@Primary → Sets default bean
+**@Primary** → Sets default bean
 
-@Controller → MVC controller for views
+**@Controller** → MVC controller for views
 
-@RestController → REST controller for APIs
+**@RestController** → REST controller for APIs
 
-@RequestMapping → Maps request to controller method
+**@RequestMapping** → Maps request to controller method
 
-@GetMapping → Handles GET request
+**@GetMapping** → Handles GET request
 
-@PostMapping → Handles POST request
+**@PostMapping** → Handles POST request
 
-@PutMapping → Handles PUT request
+**@PutMapping** → Handles PUT request
 
-@PatchMapping → Handles PATCH request
+**@PatchMapping** → Handles PATCH request
 
-@DeleteMapping → Handles DELETE request
+**@DeleteMapping** → Handles DELETE request
 
-@RequestBody → Reads request body
+**@RequestBody** → Reads request body
 
-@PathVariable → Reads URL path value
+**@PathVariable** → Reads URL path value
 
-@RequestParam → Reads query parameter
+**@RequestParam** → Reads query parameter
 
-@ExceptionHandler → Handles exceptions locally
+**@ExceptionHandler** → Handles exceptions locally
 
-@ControllerAdvice → Global exception handling
+**@ControllerAdvice** → Global exception handling
 
-@RestControllerAdvice → Global REST exception handling
+**@RestControllerAdvice** → Global REST exception handling
 
-@Transactional → Manages database transactions
+**@Transactional** → Manages database transactions
 
-@Entity → Maps class to database table
+**@Entity** → Maps class to database table
 
-@Id → Primary key
+**@Id** → Primary key
 
-@GeneratedValue → Auto-generates ID
+**@GeneratedValue** → Auto-generates ID
 
-@Table → Maps entity to table
+**@Table** → Maps entity to table
 
 @Column → Maps field to column
 
-@EnableScheduling → Enables scheduled tasks
+**@EnableScheduling** → Enables scheduled tasks
 
-@Scheduled → Runs method on schedule
+**@Scheduled** → Runs method on schedule
 
-****************
-Spring Security
-****************
-Q. What is Authentication?
+
+## Spring Security
+
+### Q. What is Authentication?
 Authentication verifies who the user is (username and password validation).
-Q. What is Authorization?
- Authorization checks what the user is allowed to access (roles and permissions).
-*****
 
-Q. What are the main parts of JWT (JSON Web Token)
-Header::---Contains information about the token type and the algorithm used to sign the token.
-Payload::---Contains the user data and claims like user id, role, and token expiry.
-Signature::---Used to verify that the token is authentic and has not been tampered with.
-*****
+### Q. What is Authorization?
+ Authorization checks what the user is allowed to access (roles and permissions)
 
-What is Password Encoding?
+### Q. What are the main parts of JWT (JSON Web Token)
+**Header**::---Contains information about the token type and the algorithm used to sign the token.
+**Payload**::---Contains the user data and claims like user id, role, and token expiry.
+**Signature**::---Used to verify that the token is authentic and has not been tampered with.
+
+### What is Password Encoding?
 Password encoding converts passwords into a secure hashed format to protect user credentials.
-*****
 
-What is CSRF (Cross-Site Request Forgery)?
+###  What is CSRF (Cross-Site Request Forgery)?
 CSRF is a security attack where a hacker forces a logged-in user’s browser to send a request to a trusted website without the user’s knowledge.
 Because the user is already authenticated, the server trusts the request and executes it.
-*****
 
-Q.Why CSRF is disabled in JWT?
+### Q.Why CSRF is disabled in JWT?
 JWT is stateless and does not rely on cookies, so CSRF protection is not required.
-*****
 
-Q. What is OAuth2?
+### Q. What is OAuth2?
 OAuth2 is an authorization framework that allows secure third-party access without sharing credentials.
-*****
 
-Q. How JWT works?
+### Q. How JWT works?
 JWT works by generating a signed token after successful authentication.
 The client sends this token with every request.
 The server validates the token instead of using sessions.
 This makes authentication stateless and scalable.
-*****
 
 
-Q:In a banking application, JWT expiry time is 10 minutes. If the token expires, the user gets logged out. Is there any way to avoid this and keep the user logged in without re-login?
+### Q:In a banking application, JWT expiry time is 10 minutes. If the token expires, the user gets logged out. Is there any way to avoid this and keep the user logged in without re-login?
 Answer:
 Yes. We use Access Token and Refresh Token.
 The access token is short-lived (10 minutes). When it is about to expire, a new access token is generated using the refresh token. This extends the session automatically without logging the user out.
-*****
 
-Stateful vs Stateless Authentication – 3 Main Differences
+### Stateful vs Stateless Authentication
+– 3 Main Differences
 1️⃣ Session Storage
 Stateful: Server stores user session
 Stateless: Server does not store session
@@ -280,12 +270,9 @@ Stateless: Easy to scale
 ******
 
 
+# Unit Testing
 
-
-****************
-Unit Testing
-****************
-What is Unit Testing in Spring Boot?
+### What is Unit Testing in Spring Boot?
 Unit testing in Spring Boot is the process of testing individual components (like service or repository methods) independently, without starting the full application.
 *****
 
