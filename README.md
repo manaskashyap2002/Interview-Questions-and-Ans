@@ -594,6 +594,59 @@ Answer:
 A dedicated DevOps engineer handled CI/CD pipelines, but backend developers, including me, supported Dockerization and environment configuration.
 
 
+Q  How many versions are release in you application ----
+Over 3 years, we released around 8–10 major versions, with multiple minor and patch releases in between as part of continuous delivery.”
+Version Breakdown ------
+📅 Year 1 – MVP & Stabilization
+Versions: 2–3 major releases
+Focus:
+Initial MVP release
+Core employee onboarding
+Authentication & basic HR workflows
+Bug fixes after first production use
+
+Example:
+v1.0 – MVP release(Minimum Viable Product)-An MVP release is the initial production version of the application with basic but working features, which allows real users to start using the system and give feedback.
+v1.1 – Security & UI improvements
+v1.2 – Performance fixes
+
+📅 Year 2 – Feature Expansion
+Versions: 3–4 major releases
+Focus:
+Stripe payment integration
+Beneficiary & benefit rule enhancements
+Audit logging
+HR/Admin dashboards
+API versioning
+
+Example:
+v2.0 – Payments & benefits overhaul
+v2.1 – Audit & compliance features
+v2.2 – Workflow automation
+
+📅 Year 3 – Hardening & Scale
+Versions: 2–3 major releases
+
+Focus:
+Docker & CI/CD
+Performance optimization
+Security upgrades
+AWS S3 lifecycle optimization
+Production stability
+
+Example:
+v3.0 – Containerized deployment
+v3.1 – Performance & scaling
+v3.2 – Security hardening
+
+🔄 Minor & Patch Releases (Mention This!)
+“Apart from major versions, we had frequent minor and patch releases for bug fixes, security updates, and configuration changes.”
+
+🧠 How Team Worked on Releases
+
+“Our 8-member team followed an iterative release cycle. Each major version was planned, tested, and released incrementally, while minor fixes were deployed more frequently.”
+
+
 
 
 ******************************************************************************************************************************
