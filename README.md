@@ -276,20 +276,20 @@ Stateless: Easy to scale
 Unit testing in Spring Boot is the process of testing individual components (like service or repository methods) independently, without starting the full application.
 *****
 
-Q.How it is done in Spring Boot?
+### Q.How it is done in Spring Boot?
 Uses JUnit for writing test cases
 Uses Mockito to mock dependencies
 Does not load the full Spring context
 *****
 
-Q.What are the benefits of Unit Testing?
+### Q.What are the benefits of Unit Testing?
 Early bug detection
 Better code quality
 Easier maintenance
 Faster development
 *****
 
-Q.What is JUnit?
+### Q.What is JUnit?
 JUnit is a testing framework for Java used to write and run unit test cases.
 It helps developers check whether individual methods or classes work as expected.
 
@@ -315,136 +315,95 @@ Used for global cleanup.
 
 6️⃣ @Disabled
 Disables a test method or class.
-*****
 
-Q.What is Mockito?
+### Q.What is Mockito?
 Mockito is a mocking framework used in unit testing.
 It creates fake objects for dependencies so that individual components can be tested independently.
-*****
 
-Q.Mockito vs JUnit?
-JUnit
+### Q.Mockito vs JUnit?
+**JUnit**
 Used to write and run test cases
 Defines test methods and assertions
 Controls test execution
 
-Mockito
+**Mockito**
 Used to mock dependencies
 Creates fake objects for testing
 Helps test classes in isolation
-*****
 
+# SQL 
 
-
-
-
-
-
-
-
-
-
-
-
-
-******************************************************************************************************************************
-******************************************************************************************************************************
-SQL                                                                                 ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-What is Indexing in SQL?
+### What is Indexing in SQL?
 Indexing in SQL is a way to speed up data retrieval from a database table—just like an index in a book helps you quickly find a topic without reading every page.
 Instead of scanning the whole table row by row, the database uses an index to jump directly to the required data.
-*****
 
-What is a primary key?
+### What is a primary key?
 A column (or combination) that uniquely identifies each row and does not allow NULL.
-*****
 
-What is a foreign key?
+### What is a foreign key?
 A key that links one table to another table’s primary key.
-*****
 
-Difference between UNIQUE and PRIMARY KEY
+### Difference between UNIQUE and PRIMARY KEY
 UNIQUE allows one NULL
 PRIMARY KEY does not allow NULL
-*****
 
-What is a JOIN in SQL?
+### What is a JOIN in SQL?
 A JOIN is used to combine rows from two or more tables based on a related column (usually a primary key and foreign key).
-**
-Types of joins
-INNER JOIN
-LEFT JOIN
-RIGHT JOIN
-FULL JOIN
-SELF JOIN
-*****
 
-What is Normalization in SQL?
+- Types of joins
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL JOIN
+- SELF JOIN
+
+### What is Normalization in SQL?
 Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity by dividing data into smaller related tables.
-*****
 
-What is ACID Property?
+### What is ACID Property?
 ACID is a set of properties that ensure reliable and consistent database transactions.
 ACID stands for:Atomicity, Consistency, Isolation, Durability
 
-Atomicity
+**Atomicity**
 A transaction is all or nothing.
 If any part fails, the entire transaction is rolled back.
 🧠 Example: Money debit + credit must both succeed.
 
-Consistency
+**Consistency**
 A transaction moves the database from one valid state to another.
 Database rules and constraints are always maintained.
 
-Isolation
+**Isolation**
 Multiple transactions run independently without affecting each other.
 Intermediate data is not visible to other transactions.
 
-Durability
+**Durability**
 Once a transaction is committed, it is permanently saved.
 Data remains safe even after system failure.
-*****
 
+# Microservices
 
-
-
-
-
-
-
-
-
-
-******************************************************************************************************************************
-******************************************************************************************************************************
-Microservices                                                                       ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-What is Microservices Architecture?
+### What is Microservices Architecture?
 An architecture where an application is split into small, independent services.
 
-Monolithic vs Microservices?
-Monolithic → single deployable unit; Microservices → independent services.
+### Monolithic vs Microservices?
+**Monolithic** → single deployable unit; Microservices → independent services.
 
-Advantages of Microservices?
+### Advantages of Microservices?
 Scalability, independent deployment, fault isolation.
 
-Disadvantages of Microservices?
+### Disadvantages of Microservices?
 Complexity, network latency, monitoring difficulty
 
-Synchronous vs Asynchronous communication?
-Synchronous → waits for response; Asynchronous → event-based, non-blocking.
-*****
+### Synchronous vs Asynchronous communication?
+**Synchronous** → waits for response; Asynchronous → event-based, non-blocking.
 
-How do Microservices communicate with each other?
+### How do Microservices communicate with each other?
 Microservices communicate with each other using **REST APIs or gRPC** for synchronous communication.
 They also use **message brokers like Kafka or RabbitMQ** for asynchronous, event-driven communication.
 Service discovery and load balancers help services find and communicate with each other dynamically.
-*****
 
-Common Microservices Design Patterns (with explanation)
+### Common Microservices Design Patterns (with explanation)
 1️⃣ API Gateway Pattern
 Acts as a single entry point for all client requests.
 Handles authentication, routing, logging, and rate limiting.
@@ -452,7 +411,7 @@ Handles authentication, routing, logging, and rate limiting.
 2️⃣ Circuit Breaker Pattern 
 The Circuit Breaker pattern is used to prevent a microservice from repeatedly calling another service that is failing.
 
-How Circuit Breaker works (States)
+### How Circuit Breaker works (States)
 1. Closed State
 Requests flow normally
 Failures are monitored
@@ -469,13 +428,13 @@ If failure → back to Open
 The Saga pattern is used to manage distributed transactions across multiple microservices.
 Saga pattern maintains data consistency by using compensating transactions instead of rollback.
 
-Why Saga Pattern is needed?
+### Why Saga Pattern is needed?
 No shared database
 No global rollback
 Each service commits independently
 Saga ensures data consistency using compensating transactions.
 
-How Saga works
+### How Saga works
 Each step:
 Executes a local transaction
 Publishes an event
@@ -501,40 +460,22 @@ Prevents tight coupling between services.
 Services communicate using events via message brokers.
 Supports asynchronous and loosely coupled systems.
 
+# Angular
 
-******************************************************************************************************************************
-******************************************************************************************************************************
-Angular                                                                             ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
+# Project 
 
-
-
-
-
-
-
-
-******************************************************************************************************************************
-******************************************************************************************************************************
-Project                                                                             ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-
-PROJECT OVERVIEW (WITH TEAM CONTEXT)
-Q1. Explain your project in detail.
-Answer:
-The Airline Employee Benefits Management System is an enterprise-grade web application used by airline HR teams to manage employee benefits, dependents, documents, and payments.
+## PROJECT OVERVIEW (WITH TEAM CONTEXT)
+### Q1. Explain your project in detail.
+Answer: The Airline Employee Benefits Management System is an enterprise-grade web application used by airline HR teams to manage employee benefits, dependents, documents, and payments.
 The project was developed over 3 years by an 8-member cross-functional team. The backend was built using Java 8, Spring Boot, Hibernate, and MySQL, following a microservices architecture.
 Security was implemented using Spring Security with JWT and OAuth2. AWS S3 was used for secure document storage, Stripe for payment processing, Angular for the frontend, and Docker with CI/CD for deployments.
 
-Q2. Why did the project take 3 years?
-Answer:
-This was a long-running enterprise product, not a one-time development.
+### Q2. Why did the project take 3 years?
+Answer: This was a long-running enterprise product, not a one-time development.
 In the first year, our 8-member team delivered the MVP covering core onboarding and benefits.
 Over the next two years, different team members worked in parallel on payments, security, compliance, performance tuning, and production support, which required continuous development and enhancements.
 
-Q3. What was your team size and role distribution?
+### Q3. What was your team size and role distribution?
 Answer:
 The team consisted of 8 members:
 3 Backend Developers (Java / Spring Boot)
@@ -542,60 +483,60 @@ The team consisted of 8 members:
 2 QA Engineers
 1 DevOps Engineer
 
-Q4. What was your role in the team?
+### Q4. What was your role in the team?
 Answer:
 I worked as a Java Backend / Full-Stack Developer within the backend team.
 I was responsible for developing REST APIs, implementing security, integrating Stripe payments and AWS S3, and collaborating with frontend, QA, and DevOps team members during releases.
 
 🏗️ MICROSERVICES & ARCHITECTURE (WITH TEAM INVOLVEMENT)
-Q5. How many microservices were there?
+### Q5. How many microservices were there?
 Answer:
 The system was designed with 10–12 microservices, each owned by specific backend developers.
 Responsibilities were clearly divided so that each backend developer handled 2–3 microservices, improving ownership and code quality.
 
-Q6. How many APIs did your system have?
+### Q6. How many APIs did your system have?
 Answer:
 Each microservice exposed around 5–12 REST APIs, so overall the system had approximately 90–120 APIs, developed and maintained collaboratively by the backend team.
 
-Q7. How did the team manage microservice communication?
+### Q7. How did the team manage microservice communication?
 Answer:
 Backend developers implemented REST-based communication for core flows, while DevOps and backend teams collaborated on async communication for audit logs and notifications.
 
 🔐 SECURITY (TEAM RESPONSIBILITY)
-Q8. Who implemented security?
+### Q8. Who implemented security?
 Answer:
 Security was primarily handled by the backend team.
 I personally worked on JWT token handling, role-based access control, and Spring Security configurations, while the team reviewed and tested security flows.
 
-Q9. How did the team handle token expiry issues?
+### Q9. How did the team handle token expiry issues?
 Answer:
 After feedback from QA and production monitoring, the backend team introduced refresh tokens to avoid frequent logouts while maintaining security.
 
 💳 PAYMENTS (STRIPE – TEAM COLLABORATION)
-Q10. Who worked on payments?
+### Q10. Who worked on payments?
 Answer:
 Stripe integration was implemented by the backend team.
 I specifically worked on payment initiation, webhook handling, refunds, and transaction logging, while QA tested multiple failure scenarios.
 
 📂 DOCUMENT MANAGEMENT (AWS S3)
-Q11. Who handled document management?
+### Q11. Who handled document management?
 Answer:
 The backend team implemented AWS S3 integration, while QA verified access controls and HR validation workflows.
 I worked on secure upload/download APIs and S3 lifecycle policies.
 
 🔄 WORKFLOWS & PRODUCTION SUPPORT
-Q12. How did the team handle production issues?
+### Q12. How did the team handle production issues?
 Answer:
 Production issues were handled collaboratively. Backend developers investigated logs, QA reproduced issues, and DevOps managed deployments and rollbacks.
 
 📈 DEPLOYMENT & DEVOPS
-Q13. Who handled deployments?
+### Q13. Who handled deployments?
 
 Answer:
 A dedicated DevOps engineer handled CI/CD pipelines, but backend developers, including me, supported Dockerization and environment configuration.
 
 
-Q  How many versions are release in you application ----
+### Q  How many versions are release in you application ----
 Over 3 years, we released around 8–10 major versions, with multiple minor and patch releases in between as part of continuous delivery.”
 Version Breakdown ------
 📅 Year 1 – MVP & Stabilization
@@ -650,50 +591,45 @@ v3.2 – Security hardening
 
 
 
-******************************************************************************************************************************
-******************************************************************************************************************************
-Mercedz 2nd roundInterview Questions                                                ******************************************
-******************************************************************************************************************************
-******************************************************************************************************************************
-
-Core Java
+# Mercedz 2nd roundInterview Questions
+## Core Java
 Arrays – Why we use them
 Arrays are used mainly to store multiple values of the same type in one variable and to access data fast using index. If the size is already known, arrays are efficient because memory is allocated once.
 
-Why array indexing is fast
+### Why array indexing is fast
 Arrays store data in continuous memory. Java calculates the memory address directly using the index, so access time is O(1). No loop or search is required.
 
-Java Collections
+### Java Collections
 ArrayList – How it is dynamic
 ArrayList uses an internal array. When the array becomes full, Java creates a bigger array, copies the old data, and continues. This resizing does not happen every time, so performance stays good.
 Memory waste in ArrayList and how Java handles it
 During resizing, old arrays become unused. Java’s Garbage Collector removes these unused arrays, so memory is freed. If size is known, we can set initial capacity to reduce resizing.
 
-ArrayList vs LinkedList – Retrieval
+### ArrayList vs LinkedList – Retrieval
 ArrayList is faster for retrieval because it supports index-based access (O(1)). LinkedList must traverse node by node, so retrieval is O(n).
 Insertion in the middle (ArrayList vs LinkedList)
 If we insert an element in the middle:
 ArrayList is slower because elements must be shifted.
 
-LinkedList is faster because it only updates references.
+### LinkedList is faster because it only updates references.
 So LinkedList is better for frequent insert/delete in the middle.
 
 Set
-Why we use Set
+### Why we use Set
 Set is used to store unique values. It automatically avoids duplicates and is useful for checking existence.
 Set implementations
 HashSet – fast, no order
 LinkedHashSet – maintains insertion order
 TreeSet – stores data in sorted order
 
-HashMap
-Why hash collision happens
+## HashMap
+### Why hash collision happens
 Hash collision happens because hashCode range is limited, but objects are many. Two keys can produce the same hash value.
 
-Why hash collision should be reduced
+### Why hash collision should be reduced
 Collisions slow down performance. HashMap must use equals() to find the correct key. Too many collisions can degrade performance from O(1) to O(n). Proper hashCode() and equals() reduce collisions.
 
-Spring Boot + Security
+## Spring Boot + Security
 OAuth 2.0 with Spring Security – High-level steps
 Add Spring Security and OAuth dependencies
 Choose OAuth provider (example: AWS Cognito)
@@ -703,7 +639,7 @@ Apply role or scope-based access
 Test end-to-end flow
 Spring Boot acts as a Resource Server, and Cognito acts as the Authorization Server.
 
-Where to put security annotations
+### Where to put security annotations
 Config level: SecurityFilterChain (global rules)
 Class level: When all APIs need same access
 Method level: For fine-grained control (most common)
