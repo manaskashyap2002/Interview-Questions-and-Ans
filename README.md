@@ -13,6 +13,7 @@
 
 ### HashMap vs Hashtable
 **HashMap** → ❌ Not thread-safe | ❌ Not synchronized | ✅ Allows 1 null key & multiple null values
+
 **Hashtable** → ✅ Thread-safe | ✅ Fully synchronized | ❌ No null key, no null value
 
 ### Abstract Class vs Interface
