@@ -101,6 +101,18 @@ This makes the code loosely coupled, easier to test, and easier to maintain
 ### How Spring does DI
 Using annotations like @Autowired, @Component, @Service, @Repository
 
+### What is a Bean?
+In Spring, a Bean is a Java object that is created, managed, and destroyed by the Spring IoC container.
+
+### What is Bean Lifecycle?
+The bean lifecycle is the complete process that a Spring Bean goes through—from its creation, dependency injection, initialization, usage, and finally destruction when the Spring container shuts down.
+
+Bean Instantiation – Spring creates the bean object
+Dependency Injection – Dependencies are injected
+Initialization – Bean is initialized (@PostConstruct)
+Bean in Use – Bean is used by the application
+Destruction – Bean is destroyed (@PreDestroy)
+
 ### Difference between @Controller and @RestController
 **@Controller**
 - Used for MVC web applications
