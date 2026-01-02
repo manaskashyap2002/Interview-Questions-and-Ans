@@ -106,6 +106,7 @@ In Spring, a Bean is a Java object that is created, managed, and destroyed by th
 
 ### What is Bean Lifecycle?
 The bean lifecycle is the complete process that a Spring Bean goes through—from its creation, dependency injection, initialization, usage, and finally destruction when the Spring container shuts down.
+
 **Bean Instantiation** – Spring creates the bean object
 **Dependency Injection** – Dependencies are injected
 **Initialization** – Bean is initialized (@PostConstruct)
