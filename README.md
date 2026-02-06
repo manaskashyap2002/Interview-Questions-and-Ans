@@ -51,6 +51,11 @@ Allows only one thread at a time to access a resource.
 ### Deadlock
 Threads waiting for each other forever.
 
+
+### Idempotent in Java 
+
+In Java, idempotency means writing logic so repeated execution does not change system state after the first success.
+
 # Java 8
 
 ### What are the features of Java 8?
