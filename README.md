@@ -609,7 +609,7 @@ v3.2 – Security hardening
 
 “Our 8-member team followed an iterative release cycle. Each major version was planned, tested, and released incrementally, while minor fixes were deployed more frequently.”
 
-
+Here is Angular Ans
 
 
 # Mercedz 2nd roundInterview Questions
